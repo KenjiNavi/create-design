@@ -1,0 +1,352 @@
+/* ----------------- */
+/* base */
+/* ----------------- */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    letter-spacing: .05em;
+    color: #141414;
+    font-family: 'Noto Serif', 'Noto Serif JP', serif;
+    margin: 0;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+/* .section-wrapper {
+    padding: 100px 0 70px;
+}
+.section-title {
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #282F35;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    max-width: 1000px;
+}
+.section-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #282F35;
+    width: 200px;
+    height: 5px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}*/
+
+/* #section-bottom-contact {
+    margin-top: 70px;
+} */
+.submit-btn {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 235px;
+    background-color: #F7D43F;
+    padding: 18px 71px;
+    border-radius: 50px;
+    box-shadow: 0 0 6 #1B1310;
+    display: block;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    color: #171717;
+    text-decoration: none;
+    transition: .3s;
+    margin-top: 80px;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+/* .text-right {
+    text-align: right;
+}
+.text-white {
+    color: #fff;
+}
+.section-title.text-white::after {
+    background-color: #fff;
+}   */
+.sp-br {
+    display: none;
+}
+
+/* ----------------- */
+/* header */
+/* ----------------- */
+.header {
+    padding: 19px 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    width: 100%;
+    transition: .3s;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.header a:hover {
+    opacity: .7;
+    cursor: pointer;
+    transition: .3s;
+}
+.site-title {
+    font-size: 2.6rem;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-item {
+    margin-right: 30px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+.burger-btn {
+    display: none;
+}
+
+
+/* ----------------- */
+/* page-title */
+/* ----------------- */
+.page-title-wrapper {
+    background-image: url(../img/contact-page-bgi@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 453px;
+}
+.page-title {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-top: 186px;
+    margin-top: 0;
+}
+ 
+.page-title-bottom {
+    font-size: 9rem;
+    color: #fff;
+    opacity: .1;
+    margin: 0 0 70px 50px;
+}
+
+/* ----------------- */
+/* form */
+/* ----------------- */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.form-list {
+    list-style: none;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.form-label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.checkbox-list {
+    list-style: none;
+    display: flex; 
+    padding-left: 0;
+}
+.checkbox-item {
+    margin-right: 20px;
+}
+.checkbox label, 
+.checkbox {
+    cursor: pointer;
+}
+.checkbox-item:last-child {
+    margin-right: 0;
+}
+.checkbox:checked {
+    background-color: #333;
+}
+input, textarea {
+    resize: none;
+    /* appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #141414;
+    width: 100%;
+    color: #171717;
+    box-sizing: border-box; */
+} 
+.input-text {
+    width: 700px;
+    line-height: 30px;
+}
+
+/* ----------------- */
+/* footer */
+/* ----------------- */
+.footer {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:768px) {
+
+/* ----------------- */
+/* base_sp */
+/* ----------------- */
+.submit-btn {
+    margin-bottom: 40px;
+}
+.sp-br {
+    display: block;
+}
+.pc-br {
+    display: none;
+}
+
+/* ----------------- */
+/* header_sp */
+/* ----------------- */
+.header {
+    padding: 30px 4vw 0;
+}
+.site-title {
+    margin-top: 0;
+}
+.header-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #282F35;
+}
+.nav-list {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+.nav-item:last-child {
+    margin-bottom: 0;
+}
+.page-title {
+    font-size: 8vw;
+}
+.page-title-bottom {
+    font-size: 10vw;
+}
+
+
+.burger-btn {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 4vw;
+}
+.burger-btn .bar {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    transition: .3s;
+}
+.bar_top,
+.bar_mid {
+    margin-bottom: 8px;
+}
+.burger-btn.cross .bar_top {
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+}
+.burger-btn.cross .bar_mid {
+    opacity: 0;
+    transition: .3s;
+}
+.burger-btn.cross .bar_bottom {
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+}
+body.noScroll {
+    overflow: hidden;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+/* ----------------- */
+/* form_sp */
+/* ----------------- */
+.form-list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.checkbox-list {
+    display: block;
+    margin-bottom: 0;
+}
+.checkbox-item {
+    margin-bottom: 5px;
+}
+.checkbox-item:first-child {
+    margin-top: 15px;
+}
+.checkbox-item:last-child {
+    margin-bottom: 0;
+}
+.input-text {
+    width: 90vw;
+}
+
+
+
+}
+    
+
